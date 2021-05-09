@@ -11,6 +11,7 @@
 
 import {Particle} from './particle.js';
 
+// Check the HTML!
 const particles = [];
 const SPEED_LIMIT = 3;
 const JOIN_RANGE = 100;
