@@ -14,8 +14,11 @@ import {Particle} from './particle.js';
 let landscape;
 let particles = [];
 
-function setup() {
+function preload() {
   landscape = loadImage('./images/landscape-1.jpg');
+}
+
+function setup() {
   createCanvas(1000, 557);
   for (let i = 0; i < 1000; i++) {          // Create 1000 particles.
     particles.push(new Particle(255, 3));
@@ -33,5 +36,6 @@ function draw() {
   }
 }
 
+window.preload = preload;
 window.setup = setup;
 window.draw = draw;
