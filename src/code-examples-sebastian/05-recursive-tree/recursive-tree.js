@@ -56,7 +56,7 @@ class RecursiveTree {
     translate(this.#xCoordinate, this.#yCoordinate);
     line(0, 0, 0, -this.#longitude);
     translate(0, -this.#longitude);
-    this.#branch(this.#longitude);
+    this.branch(this.#longitude);
     pop();
   }
 
@@ -66,7 +66,7 @@ class RecursiveTree {
    * each of those branches.
    * @param {Number} longitude Parent branch size.
    */
-  #branch(longitude) {
+  branch(longitude) {
     // Reduce branch longitude by relation. 
     longitude *= this.#branchRelation;
 
@@ -75,7 +75,7 @@ class RecursiveTree {
       rotate(this.#angle);        // Rotate axis by angle property.
       line(0, 0, 0, -longitude);  // Draw the branch.
       translate(0, -longitude);   // Translate origin to end of branch.
-      this.#branch(longitude);    // Begin new branching.
+      this.branch(longitude);    // Begin new branching.
       pop();                      // Undo last transformations.
 
       // Repeat branching to the left.
@@ -83,7 +83,7 @@ class RecursiveTree {
       rotate(-this.#angle);
       line(0, 0, 0, -longitude);
       translate(0, -longitude);
-      this.#branch(longitude);
+      this.branch(longitude);
       pop();
     }
   }

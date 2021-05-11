@@ -35,5 +35,5 @@ function setup() {
 // }
 
 window.setup = setup;
-window.draw = draw;
-window.mouseClicked = mouseClicked;
+// window.draw = draw;
+// window.mouseClicked = mouseClicked;

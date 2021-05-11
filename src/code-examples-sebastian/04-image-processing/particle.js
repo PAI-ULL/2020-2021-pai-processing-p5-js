@@ -95,6 +95,10 @@ class Particle {
     });
   }
 
+  /**
+   * Sets the color property.
+   * @param {Color} newColor 
+   */
   setColor(newColor) {
     this.#color = newColor;
   }

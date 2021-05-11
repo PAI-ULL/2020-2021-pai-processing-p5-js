@@ -30,7 +30,7 @@ class Particle {
   constructor(color, speedLimit, joinRange) {
     this.#xCoordinate = random(0, width);
     this.#yCoordinate = random(0, height);
-    this.#radius = random(1, 20);
+    this.#radius = 10;
     this.#xSpeed = random(speedLimit * -1, speedLimit);
     this.#ySpeed = random(speedLimit * -1, speedLimit);
     this.#joinRange = joinRange;
@@ -94,6 +94,14 @@ class Particle {
       }
     });
   }
+
+  /**
+   * Sets the color property.
+   * @param {Color} newColor 
+   */
+  setColor(newColor) {
+    this.#color = newColor;
+  }
 }
 
-export {Particle}
+export { Particle }
