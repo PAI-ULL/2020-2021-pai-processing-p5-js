@@ -13,6 +13,7 @@
  * It uses P5.js library functions.
  */
 class Particle {
+  /** @private */
   #xCoordinate  /** X Coordinate on canvas */
   #yCoordinate  /** Y Coordinate on canvas */
   #radius /** Radius of given particle */
@@ -35,6 +36,7 @@ class Particle {
     this.#ySpeed = random(speedLimit * -1, speedLimit);
     this.#joinRange = joinRange;
     this.#color = color;
+
   }
 
   /**
@@ -102,6 +104,21 @@ class Particle {
   setColor(newColor) {
     this.#color = newColor;
   }
+
+  /**
+   * Adds size from the current particle
+   */
+  addSize() {
+    this.#radius++;
+  }
+  
+  /**
+   * Substract size from the current particle
+   */
+  subSize() {
+    this.#radius--;
+  }
+  
 }
 
 export { Particle }
