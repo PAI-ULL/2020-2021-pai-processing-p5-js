@@ -4,7 +4,7 @@
 * Asignatura:  Programación de Aplicaciones Interactivas
 * @desc Sketch using P5.js library to demonstrate OOP Particles and events.
 * @since 08/05/2021
-* @author Sebastián Daniel Tamayo Guzmán
+* @author Alberto Rodriguez Fuentes
 */
 
 'use strict';
