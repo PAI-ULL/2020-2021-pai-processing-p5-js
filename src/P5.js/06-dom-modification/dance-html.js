@@ -34,7 +34,7 @@ class DanceHtml {
     this.#widthLimit = widthLimit;
     this.#heightLimit = heightLimit;
     this.#xCoordinate = random(0, widthLimit);
-    this.#yCoordinate = random(0, heightLimit);;
+    this.#yCoordinate = random(0, heightLimit);
     this.#xSpeed = random(-5, 5);
     this.#ySpeed = random(-5, 5);
     element.position(this.#xCoordinate, this.#yCoordinate);
