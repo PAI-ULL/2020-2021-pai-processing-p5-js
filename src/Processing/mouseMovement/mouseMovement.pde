@@ -14,11 +14,14 @@ void setup() {
 }
 
 void draw() {
-  background(51); 
-  fill(0, 204);
-  rect(mouseX, height / 2, mouseY / 2 + 10, mouseY / 2 + 10);
+  int BACKGROUND_COLOR = 51;
+  background(BACKGROUND_COLOR);
+  int FILL_COLOR =  204;
+  fill(0, FILL_COLOR);
+  int OFFSET = 10;
+  rect(mouseX, height / 2, mouseY / 2 + OFFSET, mouseY / 2 + OFFSET);
   fill(255, 204);
   int inverseX = width - mouseX;
   int inverseY = height - mouseY;
-  rect(inverseX, height / 2, (inverseY / 2) + 10, (inverseY / 2) + 10);
+  rect(inverseX, height / 2, (inverseY / 2) + OFFSET, (inverseY / 2) + OFFSET);
 }
